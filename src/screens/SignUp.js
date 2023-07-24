@@ -4,7 +4,7 @@ import { TextInput } from 'react-native-gesture-handler';
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
 import appFirebase from '../credenciales.js';
 import { getFirestore, collection, addDoc,setDoc,doc } from 'firebase/firestore';
-
+import { ReactNativeAsyncStorage } from '@react-native-async-storage/async-storage';
 const db = getFirestore(appFirebase);
 
 export default function SignUp(props) {
